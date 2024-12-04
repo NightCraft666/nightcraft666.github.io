@@ -4,7 +4,7 @@ document.getElementById("EasterEgg").onclick = function() {
   if(clicks == 3) {
     const kod = prompt("Wpisz swój kod:");
     if(kod == 2222) {
-      window.location.href = "../index.html";
+      window.location.href = "../cookies.html";
     }
   }
 }
