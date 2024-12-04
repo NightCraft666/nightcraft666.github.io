@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+body{
+    background-color: black;
+}
+h1{
+    color: aqua;
+    margin:auto;
+    margin-top: 20px;
+    width: 37%;
+    border: 3px solid rgb(0, 53, 128);
+    padding: 10px;
+    font-family:"Parkinsans";
+}
+.Media{
+    border-radius: 4px;
+    padding: 5px;
+    font-family: "Parkinsans";
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Animacja */
+    position: fixed;
+    text-decoration: none;
+    margin: auto;
+    border: 4px solid;
+    margin-top:20px;
+}
+#Tiktok{
+    left: 585px;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    background-color: #02f2ff;
+    border: 4px solid transparent;
+    border-color: rgb(67, 59, 59);
+}
+#Youtube{
+    color:white;
+    left: 670px;
+    background-color: #FF0000;
+    border-color: #ffffff6e;
+}
+#Discord{
+    color:white;
+    left: 770px;
+    background-color: #7289da;
+    border-color: #4e6fa2;
+}
+#GitHub{
+    left: 870px;
+    color:white;
+    background-color: #24292e;
+    border-color: #0366d6;
+}
+
+/*HOVERY*/
+/*HOVERY*/
+/*HOVERY*/
+/*HOVERY*/
+/*HOVERY*/
+/*HOVERY*/
+#Tiktok::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #EE1D52, #00F2EA); /* Gradient TikToka */
+    z-index: -1; /* Za tekstem przycisku */
+    filter: blur(6px); /* Rozmycie, by przypominało neon */
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Domyślnie ukryte */
+}
+#Tiktok:hover {
+    color: #EE1D52; /* Czerwony tekst na hover */
+    box-shadow: 0 0 12px rgba(238, 29, 82, 0.5), 0 0 20px rgba(0, 242, 234, 0.5); /* Neonowy cień */
+  }
+#Tiktok:hover::before {
+    opacity: 1;
+}
+#Tiktok:active {
+    transform: scale(0.95); /* Przybliżenie przycisku */
+  }
+#Youtube:hover {
+    background-color: #c4302b; /* Ciemniejszy odcień czerwieni */
+    border-color: #FF0000; /* Obramowanie staje się czerwone */
+    transform: scale(1.05); /* Lekko powiększenie */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Cień wokół przycisku */
+  }
+#Discord:hover {
+    background-color: #5d6e9c; /* Ciemniejszy odcień niebieskiego */
+    border-color: white; /* Białe obramowanie */
+    transform: scale(1.05); /* Powiększenie przycisku */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Cień wokół przycisku */
+  }
+#GitHub:hover {
+    background-color: #ffffff; /* Zmiana tła na białe */
+    color: #24292e; /* Zmiana tekstu na ciemnoszary */
+    border-color: #0366d6; /* Niebieski akcent dla GitHuba */
+    transform: scale(1.05); /* Subtelne powiększenie */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Lekki cień */
+  }
+#GitHub:active {
+    transform: scale(0.95); /* Lekkie pomniejszenie przycisku */
+    border-color: #24292e; /* Powrót do oryginalnego koloru obramowania */
+  }
