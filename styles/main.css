@@ -5,17 +5,9 @@ body {
     background-color: black;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    align-items: center; /* Wyrównuje zawartość w poziomie */
+    height: 100vh; /* Ustawia wysokość body na 100% wysokości okna */
     margin: 0;
-}
-
-.MediaContainer {
-    display: flex;
-    justify-content: center; /* Wyrównanie przycisków w poziomie */
-    align-items: center; /* Wyrównanie w pionie */
-    gap: 20px; /* Odstęp pomiędzy przyciskami */
 }
 
 h1 {
@@ -24,6 +16,13 @@ h1 {
     border: 3px solid rgb(0, 53, 128);
     padding: 10px;
     font-family: "Parkinsans";
+}
+
+.MediaContainer {
+    display: flex;
+    justify-content: center; /* Wyrównanie przycisków w poziomie */
+    gap: 20px; /* Odstęp pomiędzy przyciskami */
+    margin-top: 20px; /* Odstęp od nagłówka */
 }
 
 .Media {
