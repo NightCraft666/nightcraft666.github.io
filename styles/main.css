@@ -1,113 +1,56 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
 
-body {
+body{
+    background-color: aliceblue;
+    font-family: Parkinsans;
+}
+.center{
+    text-align: center;
+}
+#topbuttonsdiv{
+    height: 25px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Wyrównuje zawartość w poziomie */
-    height: 100vh; /* Ustawia wysokość body na 100% wysokości okna */
-    margin: 0;
+    color: white;
 }
-
-h1 {
-    color: aqua;
-    margin-top: 20px;
-    border: 3px solid rgb(0, 53, 128);
-    padding: 10px;
-    font-family: "Parkinsans";
-}
-
-.MediaContainer {
-    display: flex;
-    justify-content: center; /* Wyrównanie przycisków w poziomie */
-    gap: 20px; /* Odstęp pomiędzy przyciskami */
-    margin-top: 20px; /* Odstęp od nagłówka */
-}
-
-.Media {
-    border-radius: 4px;
-    padding: 5px;
-    font-family: "Parkinsans";
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+.NoDec{
     text-decoration: none;
-    border: 4px solid;
-}
-
-#Tiktok {
-    color: rgb(0, 0, 0);
-    background-color: #02f2ff;
-    border: 4px solid transparent;
-    border-color: rgb(67, 59, 59);
-}
-
-#Youtube {
     color: white;
-    background-color: #FF0000;
-    border-color: #ffffff6e;
 }
-
-#Discord {
-    color: white;
-    background-color: #7289da;
-    border-color: #4e6fa2;
+#contact{
+    margin:auto;
+    margin-top: 30px;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: red;
 }
-
-#GitHub {
-    color: white;
-    background-color: #24292e;
-    border-color: #0366d6;
+#mediadiv{
+    align-items: center;
+    margin:auto;
+    margin-top: 30px;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    border-style:solid;
+    border-radius: 10px;
+    border-color: rgb(0, 195, 255);
 }
-
-/*HOVERY*/
-/*HOVERY*/
-/*HOVERY*/
-/*HOVERY*/
-/*HOVERY*/
-/*HOVERY*/
-#Tiktok::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, #EE1D52, #00F2EA); /* Gradient TikToka */
-    z-index: -1; /* Za tekstem przycisku */
-    filter: blur(6px); /* Rozmycie, by przypominało neon */
-    transition: opacity 0.3s ease;
-    opacity: 0; /* Domyślnie ukryte */
+.media{
+    margin:auto;
+    margin-top: 35px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
 }
-#Tiktok:hover {
-    color: #EE1D52; /* Czerwony tekst na hover */
-    box-shadow: 0 0 12px rgba(238, 29, 82, 0.5), 0 0 20px rgba(0, 242, 234, 0.5); /* Neonowy cień */
-  }
-#Tiktok:hover::before {
-    opacity: 1;
-}
-#Tiktok:active {
-    transform: scale(0.95); /* Przybliżenie przycisku */
-  }
-#Youtube:hover {
-    background-color: #c4302b; /* Ciemniejszy odcień czerwieni */
-    border-color: #FF0000; /* Obramowanie staje się czerwone */
-    transform: scale(1.05); /* Lekko powiększenie */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Cień wokół przycisku */
-  }
-#Discord:hover {
-    background-color: #5d6e9c; /* Ciemniejszy odcień niebieskiego */
-    border-color: white; /* Białe obramowanie */
-    transform: scale(1.05); /* Powiększenie przycisku */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Cień wokół przycisku */
-  }
-#GitHub:hover {
-    background-color: #ffffff; /* Zmiana tła na białe */
-    color: #24292e; /* Zmiana tekstu na ciemnoszary */
-    border-color: #0366d6; /* Niebieski akcent dla GitHuba */
-    transform: scale(1.05); /* Subtelne powiększenie */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Lekki cień */
-  }
-#GitHub:active {
-    transform: scale(0.95); /* Lekkie pomniejszenie przycisku */
-    border-color: #24292e; /* Powrót do oryginalnego koloru obramowania */
-  }
